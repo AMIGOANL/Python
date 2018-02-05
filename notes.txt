@@ -1,0 +1,139 @@
+hosts文件所在路径：
+C:\Windows\System32\drivers\etc
+
+SVN账号密码：
+gaoth gaoth123
+SmartGit账号密码：
+Gaoth 88888888
+Github账号：
+AMIGOANL Robin960108
+
+QQ文件保存目录：
+C:\Users\gaoth\Documents\Tencent Files\980921032\FileRecv
+
+搬瓦工的IP和端口
+ZgB8Yom1Mlzu 28783
+
+sublime text3 解决中文乱码的方法：
+
+一、安装包管理器（如果已经安装可以忽略）
+1、简单的安装方法：
+使用Ctrl+`快捷键或者通过View->Show Console菜单打开命令行，粘贴如下代码：
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+顺利的话，此时就可以在Preferences菜单下看到Package Settings和Package Control两个菜单了
+
+二、安装乱码处理插件：
+调用ctrl+shift+p,输入：install package，回车，在稍后弹出的安装包框中搜索：ConvertToUTF8或者GBK Encoding Support，选择点击安装；
+从此带有中文的文件打开就不会有乱码了。
+
+防火长城（英语：Great Firewall (of China)，常用简称：GFW，中文也称中国国家防火墙
+
+问号表达式。
+一般格式为：a= b?c:d是java中的三目运算，
+意思是，如果b的条件成立，赋值a=c,否则a=d
+这个表达式是可以嵌套的，即可以a=b?c?d?:e:f:g
+这样简单地写，就可以在某种情况代替if表达式而使程序看起来简洁。
+但是这样的表达式一旦嵌套次数过多，程序可读性将急剧下降
+
+Java中final关键字的特点：
+但它最一般的意思就是声明
+“这个东西不能改变”。
+之所以要禁止改变，可能是考虑到两方面的因素：设计或效率。
+final修饰的类不能被继承。
+1.	String就是一个被final修饰的类，我们只能用，不能继承；
+2.	final不仅可以修饰类，还可以修饰变量，被final修饰的变量就是一个常量，只能赋值一次；
+3.	注意final和finally的区别，final是修饰类或者变量，finally是在异常处理中使用，如：
+	try{ }catch（）{}finally{}中，finally的作用一般用于必须处理的事情，如关闭连接
+
+Java中static关键字的作用：
+“只能运行一次”
+（1）static成员变量：
+	静态变量属于类，在内存中只有一个复制，只要静态变量所在的类被加载，这个静态变量就会被分配空间
+	实例变量属于对象，只有对象被创建后，实例变量才会被分配内存空间，才能被使用，它在内存中存在多个复制，只有用“对象.实例变量”的方式来引用。
+（2）static成员方法：
+	Java中提供了static方法和非static方法。static方法是类的方法，不需要创建对象就可以被调用，而非static方法是对象的方法，只有对象被创建出来后才可以被使用
+	static方法中不能使用this和super关键字，不能调用非static方法，只能访问所属类的静态成员变量和成员方法，因为当static方法被调用时，这个类的对象可能还没被创建，即使已经被创建了，也无法确定调用哪个对象的方法。同理，static方法也不能访问非static类型的变量。
+	单例设计模式：
+	static一个很重要的用途就是实现单例设计模式。单利模式的特点是该类只能有一个实例，为了实现这一功能，必须隐藏类的构造函数，即把构造函数声明为private，并提供一个创建对象的方法，由于构造对象被声明为private，外界无法直接创建这个类型的对象，只能通过该类提供的方法来获取类的对象，要达到这样的目的只能把创建对象的方法声明为static，程序实例如下：
+		class Singleton{
+		private static Singleton instance=null;
+		private Singleton(){}
+		public static Singleton getInstance(){
+			if(instance==null){
+				instance=new Singleton();
+			}
+			return instance;
+		}
+	}
+(3)static代码块
+	static代码块在类中是独立于成员变量和成员函数的代码块的。注意：这些static代码块只会被执行一次
+(4)static与final结合使用表示的意思：
+	对于变量，若使用static  final修饰，表示一旦赋值不能修改，并且通过类名可以访问。
+	对于方法，若使用static final修饰，表示该方法不可被覆盖，并且可以通过类名直接访问。
+tips:不能在成员函数内部定义static变量
+
+void 
+在英语里是“虚无”的意思。但亦可返回指向一个对象的句柄
+
+单例模式
+private Soup() {} 							单例模式的类只提供私有的构造函数
+private static Soup ps1 = new Soup();		类定义中含有一个该类的静态私有对象
+public static Soup access() {				该类提供了一个静态的公有的函数用于创建或获取它本身的静态私有对象
+	return ps1;
+}
+
+protected 它本身是私有的，但可由从这个类继承的任何东西或者同一个包内的其他任何东西访问
+
+查找关键字 Ctrl + F
+.java的查找 Ctrl + H
+代码格式化 Ctrl + Shift + F
+后退 Alt + left
+
+TCP vs UDP
+我们现在要做一个选择了。开发游戏到底是用UDP好呢？还是用TCP好呢？
+首先我们连列一下他们的有缺点：
+TCP：
+1. 基于连接的协议。
+2. 可靠性和数据包的序列性是有保证的。
+3. 自动为你的数据封包。
+4. 确保包的流量不会超出你的网络链接的负载上限。
+5. 简单易用，你只需要像写文件一样去读写就万事大吉了。
+UDP：
+1. 没有连接的概念，如果你想要，自己去实现去。
+2. 没有关于可靠性和包序列性的保证，包可能会丢失，重复，乱序。
+3. 你必须自己去封包。
+4. 你必须自己确保自己的数据包不会流量过大从而导致超过链接负载上限。
+5. 你必须自己处理包的丢失，重复，乱序的情况，如果你不想他们对你的程序造成麻烦，必须要自己实现代码来做出应对。
+
+1、通过url获取输入流————
+2、获取网页html代码————
+3、用正则表达式抽取有用的信息————
+4、拼装成想要的格式
+
+从控制台输入：
+BufferedReader br = new BufferedReader(InputStreamReader(System.in));
+jdk5后一般使用Scanner类：
+Scanner scanner = new Scanner(System.in);
+
+A = B ？ C ： D
+若B为真则A = C
+若B为假则A = D
+
+&&与 ||或
+
+https://demo.qiejf.com/better/p/pages/frame.html
+
+module - view - control 先从各几个单词来理解。
+module模块。就是把相同的业务封装到一起，它的功能主要是做数据的持久化，就是跟数据库相关的操作。比如把老虎跟狮子的相关信息保存到数据库或从数据库取出或删除。
+view 就是展示给用户的页面。用户可以通过可视化的页面把要请求的信息传递给后台然后返回想要的结果展示。
+control控制。它就像是一个路由器，连接着视图页面和业务模块。根据不同的请求，它把用户想要的信息从对应的业务模块获取然后反馈到不同的页面给用户。
+ 
+对应你说的例子，用户请求一只老虎，把消息请求差数1发给C，C去调用动物相关的业务信息。M通过差数把老虎对象取出给C，然后C把拿到的信息反馈给用户界面。
+
+java 中的instanceof 运算符是用来在运行时指出对象是否是特定类的一个实例。instanceof通过返回一个布尔值来指出，这个对象是否是这个特定类或者是它的子类的一个实例。
+
+Mybatis和Hibernate的区别：
+hibernate:是一个标准的ORM框架（对象关系映射）。入门门槛较高，不需要程序写sql语句，sql语句自动生产了。对sql的优化比较困难。
+应用场景：适用与需求变化不多的中小型项目中，比如后台管理，erp,orm,oa;
+ mybatis:专注于sql本身，需要程序员自己编写sql语句，sql修改，优化比较方便，mybatis是一个不完全的ORM框架，虽然程序员自己写sql,mybatis也可以实现映射(输入映射，输出映射)。
+试用场景：适用于需求变化较多的项目，比如：互联网项目。
