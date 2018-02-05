@@ -12,7 +12,7 @@ Git鼓励大量使用分支：
 
 删除分支：git branch -d <name>
 
-用git log --graph命令可以看到分支合并图。
+用git log --graph命令可以看到分支合并图;
 
 要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
 
